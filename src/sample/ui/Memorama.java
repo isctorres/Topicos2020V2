@@ -97,8 +97,6 @@ public class Memorama extends Stage implements EventHandler {
             }
         }
 
-
-
         vBox.getChildren().add(gdpMesa);
     }
 
