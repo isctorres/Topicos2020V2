@@ -19,6 +19,9 @@ import java.io.File;
 
 public class Taquimecanografo extends Stage implements EventHandler<KeyEvent> {
 
+    // Bandera para detectar cambios de color en las teclas
+    boolean banColor = false;
+
     // Arreglos para etiquetar los botones del teclado
     private String arLblBtn1[] = {"ESC","F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12","PWR"};
     private String arLblBtn2[] = {"º","1","2","3","4","5","6","7","8","9","0","'","¡","BS"};
@@ -71,7 +74,9 @@ public class Taquimecanografo extends Stage implements EventHandler<KeyEvent> {
 
         for( int i=0; i<arBtnTeclado1.length; i++ ){
             arBtnTeclado1[i] = new Button(arLblBtn1[i]);
+            arBtnTeclado1[i].setStyle("-fx-background-color: #85D4D6;");
             arBtnTeclado2[i] = new Button(arLblBtn2[i]);
+            arBtnTeclado2[i].setStyle("-fx-background-color: #85D4D6;");
             arHBoxTeclas[0].getChildren().addAll(arBtnTeclado1[i]);
             arHBoxTeclas[1].getChildren().add(arBtnTeclado2[i]);
         }
@@ -86,6 +91,7 @@ public class Taquimecanografo extends Stage implements EventHandler<KeyEvent> {
         txtEscritura = new TextArea();
         txtEscritura.setPrefRowCount(6);
         txtEscritura.setOnKeyPressed(this);
+        txtEscritura.setOnKeyReleased(this);
         //addEventHandler(KeyEvent.KEY_TYPED,this);
     }
 
@@ -117,8 +123,13 @@ public class Taquimecanografo extends Stage implements EventHandler<KeyEvent> {
     public void handle(KeyEvent event) {
         switch (event.getCode().toString()){
             case "BACK_SPACE":
-                arBtnTeclado2[13].setStyle("-fx-background-color: #1d1d1d;");
+                if( banColor == false )
+                    arBtnTeclado2[13].setStyle("-fx-background-color: #1d1d1d;");
+                else
+                    arBtnTeclado2[13].setStyle("-fx-background-color: #85D4D6;");
                 break;
         }
+
+        banColor = !banColor;
     }
 }
