@@ -15,6 +15,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import sample.ui.Memorama;
+import sample.ui.Taquimecanografo;
 
 public class Main extends Application implements EventHandler {
 
@@ -54,7 +55,7 @@ public class Main extends Application implements EventHandler {
         itmMemorama = new MenuItem("Memorama");
         itmMemorama.setOnAction(event -> opcionMenu(1));
 
-        itmPractica2 = new MenuItem("Práctica 2");
+        itmPractica2 = new MenuItem("Taquimecanógrafo");
         itmPractica2.setOnAction(event -> opcionMenu(2));
 
         itmTerminar = new MenuItem("Hasta pronto :)");
@@ -86,7 +87,7 @@ public class Main extends Application implements EventHandler {
     private void opcionMenu(int opc) {
         switch(opc){
             case 1: new Memorama();         break;
-            case 2: System.out.println("Opcion 2");   break;
+            case 2: new Taquimecanografo(); break;
             case 3: break;
         }
     }
