@@ -1,0 +1,24 @@
+.root{
+    -fx-background-image : url("https://wallpaperaccess.com/full/136035.jpg"), url("/sample/assets/logo_itc.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover, 250 300;
+    -fx-background-position: center;
+}
+
+.menu-bar{
+    -fx-background-color: #3C8EE5;
+    -fx-border-color:  #000;
+    -fx-border-width: 2;
+}
+
+.menu-bar .label{
+    -fx-text-fill: white;
+}
+
+.menu:hover{
+    -fx-background-color: #CCC;
+}
+
+.menu-item .label{
+    -fx-text-fill: black;
+}
