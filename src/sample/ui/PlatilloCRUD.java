@@ -15,8 +15,11 @@ public class PlatilloCRUD extends Stage {
     private TableView<PlatillosDAO> tbvPlatillos;
     private Button btnNuevo;
     private Scene escena;
+    private PlatillosDAO objPDAO;
 
     public PlatilloCRUD(){
+
+        objPDAO = new PlatillosDAO();
         CrearUI();
 
         this.setTitle("Administración de Platillos");
@@ -45,5 +48,6 @@ public class PlatilloCRUD extends Stage {
         tbcPrecioPlatillo.setCellValueFactory(new PropertyValueFactory<>("precio"));
 
         tbvPlatillos.getColumns().addAll(tbcIdPlatillo,tbcNomPlatillo,tbcPrecioPlatillo);
+        tbvPlatillos.setItems(objPDAO.getAllPlatillo());
     }
 }

@@ -1,5 +1,11 @@
 package sample.models;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
+import java.sql.ResultSet;
+import java.sql.Statement;
+
 public class PlatillosDAO {
     private int id_platillo;
     private String nombre_platillo;
@@ -18,6 +24,28 @@ public class PlatillosDAO {
     public void insPlatillo(){}
     public void updPlatillo(){}
     public void delPlatillo(){}
-    public void getAllPlatillo(){}
+
+    public ObservableList<PlatillosDAO> getAllPlatillo(){
+
+        ObservableList<PlatillosDAO> listaP = FXCollections.observableArrayList();
+        try{
+            PlatillosDAO objP;
+            String query = "select * from tbl_platillos order by nombre_platillo";
+            Statement stmt = Conexion.con.createStatement();
+            ResultSet res = stmt.executeQuery(query);
+            while(res.next()){
+                objP = new PlatillosDAO();
+                objP.setId_platillo(res.getInt("id_platillo"));
+                objP.setNombre_platillo(res.getString("nombre_platillo"));
+                objP.setPrecio(res.getFloat("precio"));
+                objP.setId_tipo(res.getInt("id_tipo"));
+                listaP.add(objP);
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return listaP;
+    }
+
     public void getPlatillo(){}
 }
