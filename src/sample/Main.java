@@ -3,19 +3,16 @@ package sample;
 import javafx.application.Application;
 import javafx.event.Event;
 import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 import sample.models.Conexion;
 import sample.ui.Memorama;
+import sample.ui.Dashboard;
 import sample.ui.Taquimecanografo;
 
 public class Main extends Application implements EventHandler {
@@ -24,7 +21,7 @@ public class Main extends Application implements EventHandler {
 
     private MenuBar mnbPrincipal;
     private Menu menCompetencia1, menCompetencia2, menSalir;
-    private MenuItem itmMemorama, itmPractica2, itmTerminar;
+    private MenuItem itmMemorama, itmPractica2, itmRestaurante, itmTerminar;
     private Scene escena;
 
     private ToolBar tlbMenu;
@@ -61,10 +58,15 @@ public class Main extends Application implements EventHandler {
         itmPractica2 = new MenuItem("Taquimecanógrafo");
         itmPractica2.setOnAction(event -> opcionMenu(2));
 
+        itmRestaurante = new MenuItem("Restaurante");
+        itmRestaurante.setOnAction(event -> opcionMenu(3));
+
         itmTerminar = new MenuItem("Hasta pronto :)");
         itmTerminar.setOnAction(event -> { System.exit(0);});
         // Cargar el item Memorama al menu "competencia1"
         menCompetencia1.getItems().addAll(itmMemorama,itmPractica2);
+        menCompetencia2.getItems().addAll(itmRestaurante);
+
         menSalir.getItems().add(itmTerminar);
 
         // Crear una barra de herramientas
@@ -92,7 +94,7 @@ public class Main extends Application implements EventHandler {
         switch(opc){
             case 1: new Memorama();         break;
             case 2: new Taquimecanografo(); break;
-            case 3: break;
+            case 3: new Dashboard();      break;
         }
     }
 

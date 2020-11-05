@@ -1,14 +1,17 @@
 package sample.ui;
 
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
+import sample.models.PlatillosDAO;
 
-public class Restaurante extends Stage {
+public class Dashboard extends Stage {
 
-    public Restaurante(){
-
+    public Dashboard(){
         CrearUI();
-        this.setTitle("Restaurante :)");
+        this.setTitle("Panel de administracion del Restaurante El Antojito ;)");
         this.show();
+
+        new PlatilloCRUD();
     }
 
     private void CrearUI() {
