@@ -14,12 +14,12 @@ public class Conexion {
     public static void crearConexion(){
         try{
             // Configuracion para MySQL
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://"+server+":3306/"+db,user,pwd);
+            /*Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://"+server+":3306/"+db,user,pwd);*/
 
             // Configuración para MariaDB
-            //Class.forName("org.mariadb.jdbc.Driver");
-            //con = DriverManager.getConnection("jdbc:mariadb://"+server+":3306/"+db,user,pwd);
+            Class.forName("org.mariadb.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mariadb://"+server+":3306/"+db,user,pwd);
         }catch (Exception e){
             e.printStackTrace();
         }
