@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3ca9212f-6750-4385-a1db-190d3d0d7c61" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/models/Conexion.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/models/Conexion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/components/ButtonCustome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/components/ButtonCustome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/models/PlatillosDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/models/PlatillosDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/ui/PlatilloCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/ui/PlatilloCRUD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/models/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/models/Conexion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/components/ButtonCustome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/components/ButtonCustome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/models/PlatillosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/models/PlatillosDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/ui/PlatilloCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ui/PlatilloCRUD.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

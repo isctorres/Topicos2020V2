@@ -21,9 +21,27 @@ public class PlatillosDAO {
     public int getId_tipo() { return id_tipo; }
     public void setId_tipo(int id_tipo) { this.id_tipo = id_tipo; }
 
-    public void insPlatillo(){}
+    public void insPlatillo(){
+        try{
+            String query = "INSERT INTO tbl_platillos(nombre_platillo,precio,id_tipo) " +
+                    "values('"+nombre_platillo+"',"+precio+","+id_tipo+")";
+            Statement stmt = Conexion.con.createStatement();
+            stmt.executeUpdate(query);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
     public void updPlatillo(){}
-    public void delPlatillo(){}
+    public void delPlatillo(){
+        try{
+            String query = "DELETE FROM tbl_platillos WHERE id_platillo ="+id_platillo;
+            Statement stmt = Conexion.con.createStatement();
+            stmt.executeUpdate(query);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
 
     public ObservableList<PlatillosDAO> getAllPlatillo(){
 
