@@ -32,7 +32,18 @@ public class PlatillosDAO {
         }
     }
 
-    public void updPlatillo(){}
+    public void updPlatillo(){
+        try{
+            String query = "UPDATE tbl_platillos SET nombre_platillo = '"+nombre_platillo+"', " +
+                    "precio = "+precio+", id_tipo = "+id_tipo+" WHERE id_platillo ="+id_platillo;
+            Statement stmt = Conexion.con.createStatement();
+            stmt.executeUpdate(query);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+
     public void delPlatillo(){
         try{
             String query = "DELETE FROM tbl_platillos WHERE id_platillo ="+id_platillo;

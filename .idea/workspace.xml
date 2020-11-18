@@ -5,9 +5,13 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/components/ButtonCustome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/components/ButtonCustome.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/models/PlatillosDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/models/PlatillosDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/models/TipoPlatilloDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/models/TipoPlatilloDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/ui/FrmPlatillos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/ui/FrmPlatillos.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/ui/PlatilloCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Topicos2020V2/sample/ui/PlatilloCRUD.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/components/ButtonCustome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/components/ButtonCustome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/models/PlatillosDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/models/PlatillosDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/models/TipoPlatilloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/models/TipoPlatilloDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ui/FrmPlatillos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ui/FrmPlatillos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/ui/PlatilloCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ui/PlatilloCRUD.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

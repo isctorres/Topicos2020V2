@@ -5,6 +5,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TableCell;
 import sample.models.PlatillosDAO;
+import sample.ui.FrmPlatillos;
 
 import java.util.Optional;
 
@@ -17,7 +18,8 @@ public class ButtonCustome extends TableCell<PlatillosDAO,String> {
         if( opc == 1 ) {
             btnCelda = new Button("Editar");
             btnCelda.setOnAction( event -> {
-
+                objPlatillo = ButtonCustome.this.getTableView().getItems().get(ButtonCustome.this.getIndex());
+                new FrmPlatillos(ButtonCustome.this.getTableView(),objPlatillo);
             });
         }
         else{
